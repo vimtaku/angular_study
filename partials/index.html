@@ -1,0 +1,14 @@
+<a href="2.html">sub</a>
+<input type="text" data-ng-model="name"></input>
+<div ng-bind="name">hogehoge: {{name}}</div>
+<br />
+<div>moge is {{moge}}</div>
+<br />
+<div ng-click="$log.warn($event.target);">click here then log.warn executed.</div>
+<input type="button" value="getData" ng-click="getData()"></input>
+<input type="button" value="getDataBySub" ng-click="getDataFromSubFactory()"></input>
+<div ng-repeat="data in loaded_data">
+    <ul>
+        <li><a href="#user/{{data.name}}">name:{{data.name}}</a></li>
+    </ul>
+</div>
